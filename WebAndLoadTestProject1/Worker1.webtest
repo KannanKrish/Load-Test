@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="Worker1" Id="d906c4ec-e51e-411a-83df-a97edcc6802c" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="WebTest2.ee841db0-35ac-4d9b-8faa-4b15d7cf7d1e.rec.webtestresult" ResultsLocale="">
+  <Items>
+    <Request Method="GET" Guid="cf4b48dc-9e68-4e4e-b8be-635ca8f28056" Version="1.1" Url="http://him-worker1.cloudapp.net/" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False" />
+    <Request Method="GET" Guid="6a491763-51ea-490c-86c5-d418fb4ce54e" Version="1.1" Url="http://him-worker1.cloudapp.net/" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://him-worker1.cloudapp.net/" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="2fa32801-c8fc-4484-ada4-5f78c462cb0f" Version="1.1" Url="http://him-worker1.cloudapp.net/Home/Hosting" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://him-worker1.cloudapp.net/" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="5ad4cd10-f787-47ba-bd80-45acbba4ad40" Version="1.1" Url="http://him-worker1.cloudapp.net/Home/MicrosoftProducts" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://him-worker1.cloudapp.net/Home/Hosting" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="d216cdbc-0cd0-432e-9a28-8cb2b4ccf545" Version="1.1" Url="http://him-worker1.cloudapp.net/Home/About" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://him-worker1.cloudapp.net/Home/Chat" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="1f8b6dc7-9a71-4d99-98b3-0d7f7a44fdff" Version="1.1" Url="http://him-worker1.cloudapp.net/Home/Contact" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://him-worker1.cloudapp.net/Home/About" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="a8d15a29-7ac8-4158-94bb-b5f9cc076799" Version="1.1" Url="http://him-worker1.cloudapp.net/Account/Register" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://him-worker1.cloudapp.net/Home/Contact" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="8ac5075b-5976-409d-bbb6-9d9dfaf8e31b" Version="1.1" Url="http://him-worker1.cloudapp.net/Account/Login" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://him-worker1.cloudapp.net/Account/Register" />
+      </Headers>
+    </Request>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>
